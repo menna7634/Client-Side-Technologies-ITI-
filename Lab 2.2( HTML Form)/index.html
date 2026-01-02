@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 600px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; }
+        fieldset { margin-bottom: 15px; border: 1px solid #ccc; padding: 10px; }
+        legend { font-weight: bold; }
+        .inline-label { display: inline; font-weight: normal; margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+    <h2>Create Your Account</h2>
+    <form action="Thankyou.html" method="GET">
+        
+        <div class="form-group">
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first_name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" name="last_name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password *</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="repeat-password">Repeat Password *</label>
+            <input type="password" id="repeat-password" name="repeat_password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="birth-date">Birth Date</label>
+            <input type="date" id="birth-date" name="birth_date">
+        </div>
+
+        <div class="form-group">
+            <label for="user-picture">User Picture</label>
+            <input type="file" id="user-picture" name="user_picture" accept="image/*">
+        </div>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male" class="inline-label">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" class="inline-label">Female</label>
+        </fieldset>
+
+        <div class="form-group">
+            <label for="faculty">Faculty</label>
+            <select id="faculty" name="faculty">
+                <option value="">--Please choose an option--</option>
+                <option value="engineering">Engineering</option>
+                <option value="science">Science</option>
+                <option value="arts">Arts</option>
+                <option value="business">Business</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <legend>Interests</legend>
+            <input type="checkbox" id="prog" name="interests" value="programming">
+            <label for="prog" class="inline-label">Programming</label>
+            <input type="checkbox" id="read" name="interests" value="reading">
+            <label for="read" class="inline-label">Reading</label>
+            <input type="checkbox" id="swim" name="interests" value="swimming">
+            <label for="swim" class="inline-label">Swimming</label>
+        </fieldset>
+
+        <div class="form-group">
+            <label for="about">About You</label>
+            <textarea id="about" name="about" rows="4" cols="40"></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms" class="inline-label">I agreed to terms and conditions *</label>
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>
