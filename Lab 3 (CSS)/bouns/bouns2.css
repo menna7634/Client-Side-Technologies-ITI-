@@ -1,0 +1,56 @@
+.roster-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse; 
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid #000000;
+}
+
+.roster-table th {
+    background-color: #5b9bd5;
+    color: #ffffff;
+    padding: 12px 8px;
+    border: 1px solid #000000;
+    font-weight: normal;
+    text-align: center;
+}
+
+.action-row td {
+    background-color: #f2f2f2;
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.data-cell {
+    background-color: #d2e3f3;
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+    color: #333333;
+}
+
+.link-cell {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    width: 60px; 
+}
+
+.roster-table a {
+    color: #666666; 
+    text-decoration: underline;
+}
+
+.roster-table a:hover {
+    color: #000000;
+}
+
+.roster-header {
+    width: 110px;
+}
